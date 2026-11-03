@@ -1,91 +1,67 @@
-# GitHub Profile Setup
+# GitHub Profile — source
 
-This folder is the source for **https://github.com/udaysaireddy18/udaysaireddy18** — the repo GitHub renders at the top of the profile. It is already published; the steps below are what was done, and what to repeat if you start over or fork this for another account.
+This folder is the source for **https://github.com/udaysaireddy18/udaysaireddy18**, the repo GitHub renders at the top of the profile, plus the playable **Dino Run** game it links to.
 
 ```
-README.md                      the profile itself
-assets/banner.svg              custom hero banner (plain SVG, editable)
-.github/workflows/snake.yml    daily contribution snake generator
-setup.ps1                      fills in your details
+README.md                  the profile
+assets/hero.svg            animated hero banner (pixel dino scene)
+assets/dino-preview.svg    animated preview used in the README card
+docs/index.html            landing page (GitHub Pages root)
+docs/dino/index.html       the playable Dino Run game (single file)
+SETUP.md                   this file
+setup.ps1                  re-fills placeholders if you fork this for another account
 ```
 
-## 1. Create the special repo
+Pages publishes from `main` → `/docs`:
 
-GitHub shows a profile README only when the repository name **exactly matches** your username.
-
-1. Create a new **public** repo named `YOUR_USERNAME` (e.g. user `octocat` → repo `octocat`).
-2. Tick **Add a README file** (any content — it gets replaced).
-3. That's it. The README now renders at the top of `https://github.com/YOUR_USERNAME`.
-
-## 2. Fill in your details
-
-From this folder:
-
-```powershell
-.\setup.ps1
-```
-
-It asks for your username, name, email, LinkedIn, X, and portfolio, then rewrites every placeholder in `README.md` and `assets/banner.svg`.
-
-Manual route — find & replace:
-
-| Placeholder | Replace with |
+| URL | Serves |
 | :--- | :--- |
-| `YOUR_USERNAME` | your GitHub handle |
-| `Your Name` | your display name |
-| `YOUR_LINKEDIN` | LinkedIn slug (`jean-dupont`) |
-| `YOUR_X` | X/Twitter handle |
-| `YOUR_EMAIL` | your email |
-| `YOUR_PORTFOLIO` | your site host (`mysite.dev`, no `https://`) |
-| `PROJECT_ONE` … `PROJECT_FOUR` | your repo names |
+| `https://udaysaireddy18.github.io/` | `docs/index.html` — link hub |
+| `https://udaysaireddy18.github.io/dino/` | the game |
 
-Then make the four project cards in **Featured projects** say something real. Each card is 5 lines — heading, one-sentence pitch, tech tags, demo link, source link. Delete the cards you don't need and keep the grid balanced (2×2, 1×2, or a single card is fine).
-
-## 3. Push
+## Republishing
 
 ```powershell
-git init
-git add .
-git commit -m "Add profile README"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_USERNAME.git
-git push -u origin main
+git add -A
+git commit -m "Update profile"
+git push
 ```
 
-Finally, open **Actions → Generate Snake → Run workflow** once. It publishes an `output` branch holding the snake SVGs that the README already points at, and refreshes them daily after that.
+Pages rebuilds on every push to `main` (roughly 30–60 seconds).
 
-## Why these services
+## The game
 
-Every image in the README was checked before shipping:
+`docs/dino/index.html` is self-contained: no images, no libraries, no build step. Open it straight from disk and it plays.
+
+**Mechanics** — jump physics (gravity `0.70`, impulse `12.4`), speed ramps from 6 to ~12.5 px/frame, cacti spawn with a minimum 36-frame gap so every obstacle is clearable, pterodactyls appear after 240 points and are dodged by ducking, day/night inverts every 500 points, high score in `localStorage`.
+
+Regenerate the banner and preview art (same sprites, same geometry):
+
+```powershell
+# the generator lives outside the repo; the SVG rects are hand-tuned to the sprite grid
+```
+
+The dino, bird and cactus shapes are defined as ASCII sprite grids (`#` = body) in both the SVG and the game, so edits stay consistent.
+
+## Editing the README
+
+Placeholders were already replaced. If you fork this for another account, run `.\setup.ps1` — it swaps `YOUR_USERNAME`, `Your Name`, `YOUR_EMAIL`, `YOUR_LINKEDIN`, `YOUR_X`, `YOUR_PORTFOLIO` in `README.md` and `assets/hero.svg`.
+
+## Services used
 
 | Service | What it draws |
 | :--- | :--- |
 | `readme-typing-svg.demolab.com` | animated typing headline |
 | `skillicons.dev` + `img.shields.io` | tech icons and badges |
-| `github-profile-summary-cards.vercel.app` | stats, per-language, commit-time cards |
+| `github-profile-summary-cards.vercel.app` | summary, per-language cards |
 | `streak-stats.demolab.com` | current / longest streak |
 | `komarev.com` | profile view counter |
 | `capsule-render.vercel.app` | waving footer |
 
-`github-readme-stats.vercel.app`, `github-profile-trophy`, and `github-readme-activity-graph` were **left out on purpose** — at build time they answered `503` / `402` (public instances get rate-limited). If you want them later:
-
-```md
-<!-- top languages -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true" />
-
-<!-- pinned repo card -->
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=YOUR_USERNAME&repo=REPO_NAME&theme=tokyonight&hide_border=true" />
-
-<!-- trophies -->
-<img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=tokyonight&no-frame=true" />
-```
-
-Test the URL in a browser tab first — if it renders there, it renders in the README.
+`github-readme-stats`, `github-profile-trophy` and the activity graph are **not** used — their public instances answered `503` / `402` when this was built. Add them back only if the URL renders in a browser tab first.
 
 ## Notes
 
-- **Snake missing?** The `output` branch doesn't exist until the workflow runs. Check **Actions** is enabled and the run has `contents: write` (already configured).
-- **Productive-time card** is set to `utcOffset=5.5` (IST). Change it to your own offset.
-- **Colors** are inline in the query strings: `58A6FF` blue, `A371F7` purple, `3FB950` green, `0D1117` background. Swap the hex values to re-theme everything.
-- **Banner** is SVG text — edit `assets/banner.svg` to change the name, subtitle, or the tech chips.
-- **Relative image paths** (`./assets/banner.svg`) mean the banner only renders once the `assets` folder is pushed with the README. Don't add it to `.gitignore`.
+- **Pages won't serve `_`-prefixed folders** (Jekyll). Add an empty `.nojekyll` in `docs/` if you ever add one.
+- **Game offline:** the page has zero network requests, so it works from `file://` and offline, like the original.
+- **Colors:** `58A6FF` blue, `A371F7` purple, `3FB950` green, `0D1117` background everywhere.

@@ -1,17 +1,19 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Uday Sai Reddy — Full-Stack Web Developer" width="100%" />
+  <a href="https://github.com/udaysaireddy18">
+    <img src="./assets/hero.svg" alt="Uday Sai Reddy — Full-Stack Web Developer" width="100%" />
+  </a>
 </div>
 
 <div align="center">
 
 <a href="https://github.com/udaysaireddy18">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&pause=1200&color=58A6FF&center=true&vCenter=true&width=760&lines=Full-Stack+Web+Developer;TypeScript+%E2%80%A2+React+%E2%80%A2+Node.js+%E2%80%A2+Python;I+build+things+that+run+in+the+browser;B.Tech+CSE+%40+Aditya+University" alt="Typing intro" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&pause=1200&color=58A6FF&center=true&vCenter=true&width=760&lines=Full-Stack+Web+Developer;TypeScript+%E2%80%A2+React+%E2%80%A2+Node.js+%E2%80%A2+Python;I+build+things+that+run+in+the+browser;B.Tech+CSE+%40+Aditya+University" alt="Typing intro" />
 </a>
 
 <p>
   <a href="https://github.com/udaysaireddy18?tab=followers"><img src="https://img.shields.io/github/followers/udaysaireddy18?label=Followers&style=for-the-badge&color=58A6FF&labelColor=0D1117" alt="Followers" /></a>
   <img src="https://komarev.com/ghpvc/?username=udaysaireddy18&style=for-the-badge&color=58A6FF&label=PROFILE+VIEWS" alt="Profile views" />
-  <img src="https://img.shields.io/badge/Focus-Full--Stack%20Web-a371f7?style=for-the-badge&labelColor=0D1117" alt="Focus" />
+  <img src="https://img.shields.io/badge/Based%20in-India-a371f7?style=for-the-badge&labelColor=0D1117" alt="Based in India" />
   <img src="https://img.shields.io/badge/Open%20to-Internships-3fb950?style=for-the-badge&labelColor=0D1117" alt="Open to internships" />
 </p>
 
@@ -19,13 +21,45 @@
 
 ---
 
+## 🎮 Dino Run — the Chrome offline game, rebuilt
+
+<div align="center">
+
+<a href="https://udaysaireddy18.github.io/dino/">
+  <img src="./assets/dino-preview.svg" alt="Animated preview of the Dino Run game" width="100%" />
+</a>
+
+<br/><br/>
+
+<a href="https://udaysaireddy18.github.io/dino/">
+  <img src="https://img.shields.io/badge/%E2%96%B6%20%20PLAY%20DINO%20RUN-58A6FF?style=for-the-badge&labelColor=0D1117&logo=googlechrome&logoColor=white" alt="Play Dino Run" />
+</a>
+<img src="https://img.shields.io/badge/1%20HTML%20file-0%20dependencies-3fb950?style=for-the-badge&labelColor=0D1117" alt="One HTML file, zero dependencies" />
+<img src="https://img.shields.io/badge/works-offline-a371f7?style=for-the-badge&labelColor=0D1117" alt="Works offline" />
+
+</div>
+
+<br/>
+
+The same T-Rex you meet when your Wi-Fi dies — hand-built with the canvas API. No sprite sheets, no libraries, no build step: every cactus is a rectangle and every frame is 60fps.
+
+| | |
+| :--- | :--- |
+| **Controls** | `Space` / `↑` jump · `↓` duck · tap to jump on mobile |
+| **Survive** | cacti, then pterodactyls after 240 points |
+| **Day / night** | the palette inverts every 500 points |
+| **High score** | saved in `localStorage`, no account needed |
+| **Source** | [`docs/dino/index.html`](https://github.com/udaysaireddy18/udaysaireddy18/blob/main/docs/dino/index.html) |
+
+---
+
 ## 👋 About me
 
 <table>
 <tr>
-<td width="58%" valign="top">
+<td width="56%" valign="top">
 
-I'm **Uday**, a second-year **B.Tech CSE student at Aditya University** who builds full-stack web apps and voice-first tools. I like products that load fast, work offline where they can, and explain themselves without a manual.
+I'm **Uday**, a second-year **B.Tech CSE student at Aditya University** who builds full-stack web apps and voice-first tools. I like products that load fast, work offline when they can, and explain themselves without a manual.
 
 Right now most of my time goes into **RakshaCall** — a browser-only scam-call guard that checks whether the caller really is the relative they claim to be.
 
@@ -34,12 +68,11 @@ Right now most of my time goes into **RakshaCall** — a browser-only scam-call 
 - 🐍 Exploring **speech recognition, LLMs, and desktop automation**
 - 📷 Off the keyboard: behind a camera — my portfolio is part photo journal
 - 💬 Ask me about **React, Node/Express, or shipping without a backend**
-- ⚡ Fun fact: I'd rather ship a small thing that works than a big thing that doesn't
 
 </td>
-<td width="42%" valign="top">
+<td width="44%" valign="top">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=udaysaireddy18&theme=github_dark" alt="GitHub stats" width="100%" />
+<img src="https://github.com/udaysaireddy18.png?size=240" alt="Uday Sai Reddy" width="100%" />
 
 </td>
 </tr>
@@ -77,22 +110,6 @@ Right now most of my time goes into **RakshaCall** — a browser-only scam-call 
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-
-</div>
-
----
-
-## 📊 GitHub in numbers
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=udaysaireddy18&theme=github_dark" alt="Profile summary" width="100%" />
-
-<img src="https://streak-stats.demolab.com/?user=udaysaireddy18&hide_border=true&theme=tokyonight&background=0D1117&stroke=30363D&ring=58A6FF&fire=A371F7&currStreakLabel=58A6FF" alt="Streak stats" width="49%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=udaysaireddy18&theme=github_dark" alt="Repos per language" width="49%" />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=udaysaireddy18&theme=github_dark" alt="Most commit language" width="49%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=udaysaireddy18&theme=github_dark&utcOffset=5.5" alt="Productive time" width="49%" />
 
 </div>
 
@@ -167,15 +184,14 @@ A dark-first, glassmorphic portfolio for a developer who also shoots photos — 
 
 ---
 
-## 🐍 Contribution snake
+## 📊 GitHub in numbers
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/udaysaireddy18/udaysaireddy18/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/udaysaireddy18/udaysaireddy18/output/github-snake.svg" />
-  <img src="https://raw.githubusercontent.com/udaysaireddy18/udaysaireddy18/output/github-snake-dark.svg" alt="Contribution snake" width="100%" />
-</picture>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=udaysaireddy18&theme=github_dark" alt="Profile summary" width="100%" />
+
+<img src="https://streak-stats.demolab.com/?user=udaysaireddy18&hide_border=true&theme=tokyonight&background=0D1117&stroke=30363D&ring=58A6FF&fire=A371F7&currStreakLabel=58A6FF" alt="Streak stats" width="49%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=udaysaireddy18&theme=github_dark" alt="Repos per language" width="49%" />
 
 </div>
 
@@ -187,8 +203,8 @@ A dark-first, glassmorphic portfolio for a developer who also shoots photos — 
 
 <a href="https://github.com/udaysaireddy18"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <a href="mailto:udaysaireddy181@outlook.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="https://udaysaireddy18.github.io/rakshacall/"><img src="https://img.shields.io/badge/RakshaCall-Live%20demo-58A6FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="RakshaCall live demo" /></a>
-<a href="https://github.com/udaysaireddy18/portfolio"><img src="https://img.shields.io/badge/Portfolio-Source-A371F7?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio source" /></a>
+<a href="https://udaysaireddy18.github.io/"><img src="https://img.shields.io/badge/Links-Live%20site-58A6FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live site" /></a>
+<a href="https://udaysaireddy18.github.io/rakshacall/"><img src="https://img.shields.io/badge/RakshaCall-Live%20demo-A371F7?style=for-the-badge&logo=react&logoColor=white" alt="RakshaCall live demo" /></a>
 
 <br/><br/>
 

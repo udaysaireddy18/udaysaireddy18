@@ -1,25 +1,25 @@
 # GitHub Profile — source
 
-This folder is the source for **https://github.com/udaysaireddy18/udaysaireddy18**, the repo GitHub renders at the top of the profile, plus the playable **Dino Run** game it links to.
+This folder is the source for **https://github.com/udaysaireddy18/udaysaireddy18**, the repo GitHub renders at the top of the profile.
+
+The playable game and landing page live in a second repo, **`udaysaireddy18.github.io`**, so they get clean URLs:
+
+| URL | Serves |
+| :--- | :--- |
+| `https://udaysaireddy18.github.io/` | landing page / link hub |
+| `https://udaysaireddy18.github.io/dino/` | the Dino Run game |
 
 ```
 README.md                  the profile
 assets/hero.svg            animated hero banner (pixel dino scene)
 assets/dino-preview.svg    animated preview used in the README card
-docs/index.html            landing page (GitHub Pages root)
-docs/dino/index.html       the playable Dino Run game (single file)
-SETUP.md                   this file
 setup.ps1                  re-fills placeholders if you fork this for another account
+SETUP.md                   this file
 ```
 
-Pages publishes from `main` → `/docs`:
-
-| URL | Serves |
-| :--- | :--- |
-| `https://udaysaireddy18.github.io/` | `docs/index.html` — link hub |
-| `https://udaysaireddy18.github.io/dino/` | the game |
-
 ## Republishing
+
+Profile README:
 
 ```powershell
 git add -A
@@ -27,21 +27,23 @@ git commit -m "Update profile"
 git push
 ```
 
+Game / site — in `..\udaysaireddy18.github.io`:
+
+```powershell
+git add -A
+git commit -m "Update site"
+git push
+```
+
 Pages rebuilds on every push to `main` (roughly 30–60 seconds).
 
 ## The game
 
-`docs/dino/index.html` is self-contained: no images, no libraries, no build step. Open it straight from disk and it plays.
+`dino/index.html` in the site repo is self-contained: no images, no libraries, no build step. Open it straight from disk and it plays — same as the original offline page.
 
 **Mechanics** — jump physics (gravity `0.70`, impulse `12.4`), speed ramps from 6 to ~12.5 px/frame, cacti spawn with a minimum 36-frame gap so every obstacle is clearable, pterodactyls appear after 240 points and are dodged by ducking, day/night inverts every 500 points, high score in `localStorage`.
 
-Regenerate the banner and preview art (same sprites, same geometry):
-
-```powershell
-# the generator lives outside the repo; the SVG rects are hand-tuned to the sprite grid
-```
-
-The dino, bird and cactus shapes are defined as ASCII sprite grids (`#` = body) in both the SVG and the game, so edits stay consistent.
+The dino, bird and cactus shapes are ASCII sprite grids (`#` = body) shared by the SVG art and the game, so edits stay consistent. `window.__dino` exposes a small debug API (`state`, `score`, `nearest`, `threat`, `jump()`, `duck()`) that a headless test drives to check collisions and spacing — the run that shipped survived 60 simulated seconds at 2259 points.
 
 ## Editing the README
 
@@ -53,7 +55,7 @@ Placeholders were already replaced. If you fork this for another account, run `.
 | :--- | :--- |
 | `readme-typing-svg.demolab.com` | animated typing headline |
 | `skillicons.dev` + `img.shields.io` | tech icons and badges |
-| `github-profile-summary-cards.vercel.app` | summary, per-language cards |
+| `github-profile-summary-cards.vercel.app` | summary and per-language cards |
 | `streak-stats.demolab.com` | current / longest streak |
 | `komarev.com` | profile view counter |
 | `capsule-render.vercel.app` | waving footer |
@@ -62,6 +64,6 @@ Placeholders were already replaced. If you fork this for another account, run `.
 
 ## Notes
 
-- **Pages won't serve `_`-prefixed folders** (Jekyll). Add an empty `.nojekyll` in `docs/` if you ever add one.
-- **Game offline:** the page has zero network requests, so it works from `file://` and offline, like the original.
+- **Pages for this repo is disabled on purpose.** GitHub only serves a user site from a repo named `<username>.github.io`; the profile repo would have been stuck at `/udaysaireddy18/`.
+- **Banner edits** are plain SVG — the dino is a set of `<rect>`s generated from the sprite grid, so text and colors are editable by hand.
 - **Colors:** `58A6FF` blue, `A371F7` purple, `3FB950` green, `0D1117` background everywhere.

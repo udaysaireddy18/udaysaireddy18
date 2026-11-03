@@ -49,7 +49,7 @@ The same T-Rex you meet when your Wi-Fi dies — hand-built with the canvas API.
 | **Survive** | cacti, then pterodactyls after 240 points |
 | **Day / night** | the palette inverts every 500 points |
 | **High score** | saved in `localStorage`, no account needed |
-| **Source** | [`docs/dino/index.html`](https://github.com/udaysaireddy18/udaysaireddy18/blob/main/docs/dino/index.html) |
+| **Source** | [`dino/index.html`](https://github.com/udaysaireddy18/udaysaireddy18.github.io/blob/main/dino/index.html) |
 
 ---
 

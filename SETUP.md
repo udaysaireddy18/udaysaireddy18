@@ -1,6 +1,6 @@
 # GitHub Profile Setup
 
-This folder is a ready-to-publish GitHub **profile README** repo. Three steps and it's live.
+This folder is the source for **https://github.com/udaysaireddy18/udaysaireddy18** — the repo GitHub renders at the top of the profile. It is already published; the steps below are what was done, and what to repeat if you start over or fork this for another account.
 
 ```
 README.md                      the profile itself

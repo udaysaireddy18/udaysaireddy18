@@ -182,8 +182,8 @@ A dark-first, glassmorphic portfolio for a developer who also shoots photos — 
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=udaysaireddy18&theme=merko" alt="Profile summary" width="100%" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=udaysaireddy18&theme=merko" alt="Repos per language" width="49%" />
-<img src="https://streak-stats.demolab.com/?user=udaysaireddy18&hide_border=true&background=050807&stroke=14432A&ring=3FB950&fire=3FB950&currStreakNum=7EE787&currStreakLabel=3FB950&sideNums=c9f5d9&sideLabels=5f8a70&dates=5f8a70&border_radius=6" alt="Streak stats" width="49%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=udaysaireddy18&theme=merko" alt="Repos per language" width="48%" />
+<img src="https://streak-stats.demolab.com/?user=udaysaireddy18&hide_border=true&background=050807&stroke=14432A&ring=3FB950&fire=3FB950&currStreakNum=7EE787&currStreakLabel=3FB950&sideNums=c9f5d9&sideLabels=5f8a70&dates=5f8a70&border_radius=6" alt="Streak stats" width="48%" />
 
 </div>
 

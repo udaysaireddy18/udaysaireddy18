@@ -122,7 +122,7 @@ Smart file sharing: drop a file in, get a link, manage everything from a dashboa
 
 `JavaScript` `Express` `Supabase` `HTML/CSS`
 
-[`src`](https://github.com/udaysaireddy18/shareX)
+[`live`](https://udaysaireddy18.github.io/shareX/) · [`src`](https://github.com/udaysaireddy18/shareX)
 
 </td>
 <td width="50%" valign="top">

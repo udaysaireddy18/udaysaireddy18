@@ -17,7 +17,10 @@
   <img src="https://img.shields.io/badge/status-open%20to%20internships-7EE787?style=for-the-badge&labelColor=050807" alt="Open to internships" />
 </p>
 
-<a href="https://udaysaireddy18.github.io/"><img src="https://img.shields.io/badge/%E2%96%B6%20%20enter%20the%20terminal-3FB950?style=for-the-badge&labelColor=050807&logo=gnometerminal&logoColor=7EE787" alt="Enter the terminal" /></a>
+<p>
+  <a href="https://udaysaireddy18.github.io/"><img src="https://img.shields.io/badge/%E2%96%B6%20%20enter%20the%20terminal-3FB950?style=for-the-badge&labelColor=050807&logo=gnometerminal&logoColor=7EE787" alt="Enter the terminal" /></a>
+  <a href="https://udaysaireddy.dev/"><img src="https://img.shields.io/badge/%E2%96%B6%20%20view%20portfolio-7EE787?style=for-the-badge&labelColor=050807&logo=files&logoColor=050807" alt="View portfolio" /></a>
+</p>
 
 </div>
 
@@ -107,58 +110,38 @@ uday@github:~$ _
 
 ---
 
-## `$` ls projects/
+## `$` ls featured/
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### `[01]` rakshacall
+### `[01]` shareX
+
+Smart file sharing: drop a file in, get a link, manage everything from a dashboard. Vanilla JS front end on an Express + Supabase auth and storage backend.
+
+`JavaScript` `Express` `Supabase` `HTML/CSS`
+
+[`src`](https://github.com/udaysaireddy18/shareX)
+
+</td>
+<td width="50%" valign="top">
+
+### `[02]` rakshacall
 
 A local-first scam-call guard. Learns your family's real voices and flags impersonation or cloned-voice calls — entirely in the browser.
 
 `React` `Vite` `Web Audio` `PWA`
 
-[`live`](https://udaysaireddy18.github.io/rakshacall/) · [`src`](https://github.com/udaysaireddy18/rakshacall)
-
-</td>
-<td width="50%" valign="top">
-
-### `[02]` siri-desktop-voice-assistant
-
-A Windows AI assistant you talk to: speech recognition, laptop control, reminders, and a study companion for B.Tech subjects.
-
-`Python` `PySide6` `Groq` `TTS`
-
-[`src`](https://github.com/udaysaireddy18/siri-desktop-voice-assistant)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### `[03]` BankMangementSystem
-
-A DBMS project with a real client–server split: dependency-free JavaScript frontend talking to a typed Node/Express REST API.
-
-`Node.js` `Express` `JavaScript` `SQL`
-
-[`src`](https://github.com/udaysaireddy18/BankMangementSystem)
-
-</td>
-<td width="50%" valign="top">
-
-### `[04]` portfolio
-
-A dark-first, glassmorphic portfolio for a developer who also shoots photos — typed, accessible, keyboard-friendly.
-
-`React` `TypeScript` `Vite`
-
-[`src`](https://github.com/udaysaireddy18/portfolio)
+[`live`](https://www.rakshacall.udaysaireddy.dev) · [`src`](https://github.com/udaysaireddy18/rakshacall)
 
 </td>
 </tr>
 </table>
+
+<div align="center">
+<sub>everything else lives in the <a href="https://github.com/udaysaireddy18?tab=repositories">repo archive</a></sub>
+</div>
 
 <details>
 <summary><code>$ cat roadmap.md</code></summary>

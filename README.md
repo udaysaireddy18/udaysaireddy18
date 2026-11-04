@@ -176,10 +176,9 @@ A local-first scam-call guard. Learns your family's real voices and flags impers
 
 <div align="center">
 
-<a href="mailto:udaysaireddy181@outlook.com"><img src="https://img.shields.io/badge/email-udaysaireddy181%40outlook.com-3FB950?style=for-the-badge&labelColor=050807&logo=maildotru&logoColor=7EE787" alt="Email" /></a>
+<a href="mailto:udaysaireddy181@gmail.com"><img src="https://img.shields.io/badge/email-udaysaireddy181%40gmail.com-3FB950?style=for-the-badge&labelColor=050807&logo=gmail&logoColor=7EE787" alt="Email" /></a>
 <a href="https://github.com/udaysaireddy18"><img src="https://img.shields.io/badge/github-udaysaireddy18-3FB950?style=for-the-badge&labelColor=050807&logo=github&logoColor=7EE787" alt="GitHub" /></a>
-<a href="https://udaysaireddy18.github.io/"><img src="https://img.shields.io/badge/site-udaysaireddy18.github.io-3FB950?style=for-the-badge&labelColor=050807&logo=googlechrome&logoColor=7EE787" alt="Website" /></a>
-<a href="https://udaysaireddy18.github.io/rakshacall/"><img src="https://img.shields.io/badge/rakshacall-live%20demo-7EE787?style=for-the-badge&labelColor=050807&logo=react&logoColor=050807" alt="RakshaCall demo" /></a>
+<a href="https://udaysaireddy.dev/"><img src="https://img.shields.io/badge/site-udaysaireddy.dev-3FB950?style=for-the-badge&labelColor=050807&logo=googlechrome&logoColor=7EE787" alt="Website" /></a>
 
 <br/><br/>
 
